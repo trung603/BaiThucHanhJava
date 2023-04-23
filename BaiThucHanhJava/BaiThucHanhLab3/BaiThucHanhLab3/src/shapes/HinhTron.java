@@ -2,18 +2,35 @@ package shapes;
 import java.util.Scanner;
 public class HinhTron extends HinhHoc {
     public float banKinh;
+     public HinhTron(float banKinh){
+        this.banKinh = banKinh;
+    }
+
     public HinhTron(){
-        ten = "Hình Tròn";
+        super.setTen("Hinh Tron");
     }
+    public HinhTron(String ten){
+        super.setTen(ten);
+    }
+    public float getBanKinh(){
+        return this.banKinh;
+    }
+    public void setBanKinh(float banKinh){
+        this.banKinh = banKinh;
+    }
+
     public void nhapBanKinh(){
-        System.out.println("Ban Kinh = ");
-        Scanner scanner = new Scanner(System.in);
-        banKinh = scanner.nextFloat();
+        System.out.println("\nNhap vao r = ");
+        Scanner sc = new Scanner(System.in);
+        banKinh = sc.nextFloat();
+        setBanKinh(banKinh);
+     }
+
+    public void tinhChuViHinhTron() {
+        setChuVi(2 * getPI() * getBanKinh());
     }
-    public void tinhChuVi(){
-        chuVi = 2 * PI * banKinh;
-    }
+
     public void tinhDienTich(){
-        dienTich = PI * banKinh * banKinh;
+        setDienTich(getPI() * getBanKinh() * getBanKinh());
     }
 }

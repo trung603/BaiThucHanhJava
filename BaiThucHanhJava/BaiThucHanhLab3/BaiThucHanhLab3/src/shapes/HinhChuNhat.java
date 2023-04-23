@@ -4,22 +4,41 @@ public class HinhChuNhat extends HinhHoc {
     public float dai;
     public float rong;
     public HinhChuNhat(){
-        ten = "Hinh Chu Nhat";
+        super.setTen("Hinh Chu Nhat");
     }
+    public HinhChuNhat(String ten){
+        super.setTen(ten);
+    }
+    public float getDai(){
+        return this.dai;
+    }
+    public void setDai(float dai){
+        this.dai = dai;
+    }
+    public float getRong(){
+        return this.rong;
+    }
+    public void setRong(float rong){
+        this.rong = rong;
+    }
+
     public void nhapChieuDai(){
-        System.out.println("Chieu dai = ");
-        Scanner scanner = new Scanner(System.in);
-        dai = scanner.nextFloat();
+        System.out.println("\nNhap vao chieu dai = ");
+        Scanner sc = new Scanner(System.in);
+        dai = sc.nextFloat();
     }
-        public void nhapChieuRong(){
-        System.out.println("Chieu rong = ");
-        Scanner scanner = new Scanner(System.in);
-        rong = scanner.nextFloat();
+    
+    public void nhapChieuRong(){
+        System.out.println("\nNhap vao chieu Rong = ");
+        Scanner sc = new Scanner(System.in);
+        rong = sc.nextFloat();
     }
-        public void tinhChuVi(){
-            chuVi = 2 * (dai + rong);
-        }
-        public void tinhDienTich(){
-            dienTich = dai * rong;
-        }
+
+    public void tinhChuVi(){
+        setChuVi(2*(dai + rong));
+    }
+
+    public void tinhDienTich(){
+        setDienTich(dai * rong);
+    }
 }

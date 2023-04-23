@@ -7,37 +7,37 @@ import shapes.HinhVuong;
 
 public class MainClass {
     public static void main(String[] args) {
-        // Thử nghiệm với lớp Hình tròn
-        HinhTron HinhTron = new HinhTron();
-        HinhTron.XuatTen();
-        HinhTron.nhapBanKinh();
-        HinhTron.tinhChuVi();
-        HinhTron.tinhDienTich();
-        HinhTron.inChuVi();
-        HinhTron.inDienTich();
-        
-        // Thử nghiệm với lớp Hình trụ
-        HinhTru HinhTru = new HinhTru();
-        HinhTru.XuatTen();
-        HinhTru.nhapChieuCao();
-        HinhTru.tinhTheTich();
-        HinhTru.inTheTich();
-        // Thử nghiệm với lớp Hình chữ nhật
-        HinhChuNhat HinhChuNhat = new HinhChuNhat();
-        HinhChuNhat.XuatTen();
-        HinhChuNhat.nhapChieuDai();
-        HinhChuNhat.nhapChieuRong();
-        HinhChuNhat.tinhChuVi();
-        HinhChuNhat.tinhDienTich();
-        HinhChuNhat.inChuVi();
-        HinhChuNhat.inDienTich();
-        // Thử nghiệm với lớp Hình vuông
-        HinhVuong HinhVuong = new HinhVuong();
-        HinhVuong.XuatTen();
-        HinhVuong.nhapCanh();
-        HinhVuong.tinhChuVi();
-        HinhVuong.tinhDienTich();
-        HinhVuong.inChuVi();
-        HinhVuong.inDienTich();
+        HinhTron ht = new HinhTron();
+        ht.xuatTen();
+        ht.nhapBanKinh();
+        ht.tinhChuViHinhTron();
+        ht.tinhDienTich();
+        ht.inChuVi();
+        ht.inDienTich();
+
+        HinhTru ht1 = new HinhTru();
+        ht1.xuatTen();
+        ht1.nhapChieuCao();
+        ht1.nhapBanKinh();
+        ht1.tinhDienTich();
+        ht1.tinhTheTich();
+        ht1.inTheTich();
+
+        HinhChuNhat ht2 = new HinhChuNhat();
+        ht2.xuatTen();
+        ht2.nhapChieuDai();
+        ht2.nhapChieuRong();
+        ht2.tinhChuVi();
+        ht2.tinhDienTich();
+        ht2.inChuVi();
+        ht2.inDienTich();
+
+        HinhVuong ht3 = new HinhVuong();
+        ht3.xuatTen();
+        ht3.nhapCanh();
+        ht3.tinhChuVi();
+        ht3.tinhDienTich();
+        ht3.inChuVi();
+        ht3.inDienTich();
     }
 }

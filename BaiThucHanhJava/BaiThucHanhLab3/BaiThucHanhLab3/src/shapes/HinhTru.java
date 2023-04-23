@@ -4,18 +4,28 @@ import java.util.Scanner;
 public class HinhTru extends HinhTron {
     public float chieuCao;
     
-    //constructor
-    public HinhTru(){
-        ten = "Hình Trụ";
+     public HinhTru(){
+        super.setTen("Hinh Tru");
+    }
+    public HinhTru(String ten){
+        super.setTen(ten);
+    }
+    
+    public float getChieuCao(){
+        return this.chieuCao;
+    }
+    public void setChieuCao(float chieuCao){
+        this.chieuCao = chieuCao;
     }
     public void nhapChieuCao(){
-        nhapBanKinh();
-        System.out.println("Chiều cao = ");
-        Scanner scanner = new Scanner(System.in);
-        chieuCao = scanner.nextFloat();
+        System.out.println("\nNhap vao chieu cao = ");
+        Scanner sc = new Scanner(System.in);
+        chieuCao = sc.nextFloat();
     }
+
+   
     public void tinhTheTich(){
         tinhDienTich();
-        theTich = dienTich * chieuCao;
+        setTheTich(getDienTich() * chieuCao);
     }
 }

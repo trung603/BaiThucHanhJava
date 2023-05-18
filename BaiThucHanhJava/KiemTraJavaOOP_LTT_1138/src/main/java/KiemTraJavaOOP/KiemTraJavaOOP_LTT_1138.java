@@ -1,4 +1,4 @@
-package com.mycompany.kiemtrajavaoop_ltt_1138;
+package KiemTraJavaOOP;
 
 
 public class KiemTraJavaOOP_LTT_1138 {
